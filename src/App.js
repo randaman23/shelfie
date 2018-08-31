@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios'
 import "./App.css";
 import Dashboard from "../src/component/Dashboard/Dashboard";
 import Form from "../src/component/Form/Form";
@@ -8,8 +9,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      inventory: ["hat", "coat", "shoes","shirt"]
+      inventory: []
     };
+  }
+
+  componentDidMount(){
+    axios.get('/api/inventory')
   }
 
   render() {
