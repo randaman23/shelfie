@@ -12,7 +12,9 @@ const port = 3232
 
 massive(connectionString).then(connection =>{
     app.set('db', connection)
-    app.listen(port, ()=> {console.log(`Magic is happenin on port ${port}`)})
+    app.listen(port, ()=> {console.log(`Magic is happenin' on port ${port}`)})
 })
     
 app.get('/api/inventory', c.getAll)
+app.post('/api/product', c.createProduct)
+app.delete('/api/product/:id', c.deleteItem)

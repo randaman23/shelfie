@@ -1,0 +1,1 @@
+-- delete from shelfieproducts where id = $1rs
