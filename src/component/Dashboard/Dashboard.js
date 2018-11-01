@@ -12,7 +12,9 @@ render(){
     })
     return(
         <div>Dashboard
-        <Product />
+        <Product
+        // delete={this.props.delete}
+         />
         {list}
         </div>
 

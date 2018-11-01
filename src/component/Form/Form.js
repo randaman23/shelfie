@@ -11,7 +11,7 @@ class Form extends Component {
         }
         this.baseState = this.state
         this.handleCancel=this.handleCancel.bind(this)
-        this.addNewProduct=this.addNewProduct.bind(this)
+        // this.addNewProduct=this.addNewProduct.bind(this)
     
 
     }

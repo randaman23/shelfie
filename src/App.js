@@ -19,13 +19,19 @@ class App extends Component {
     })
   }
 
+  // delete(id){
+  //   axios.delete(`/api/product/${id}`)
+  // }
+
   render() {
     return (
       <div className="App">
         <Header />
         {/* <div>{this.state.inventory}</div> */}
         <Dashboard 
-        inventory={this.state.inventory}/>
+        inventory={this.state.inventory}
+        // delete={delete}
+        />
         <Form get = {this.componentDidMount}/>
       </div>
     );
